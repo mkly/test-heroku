@@ -1,0 +1,13 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      run: echo 1
+
+workflows:
+  wf:
+    jobs:
+      - test
