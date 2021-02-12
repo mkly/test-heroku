@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      run: echo 1
+      - run: echo 1
 
 workflows:
   wf:
